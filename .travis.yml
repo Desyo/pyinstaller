@@ -77,4 +77,5 @@ install:
 script:
   # Run tests and speed them up by sending them to multiple CPUs.
   # Run unitttest first.
-  - py.test -n 5  --maxfail 3 tests/unit/ tests/
+  #- py.test -n 5  --maxfail 3 tests/unit/ tests/
+  - py.test -n 5 tests/functional/test_import.py -k test_nspkg
